@@ -360,7 +360,7 @@ function ProgressBar({ currentStep, onStepClick, branding }: { currentStep: numb
               onClick={() => onStepClick(i)}
               disabled={i > currentStep}
               className={`flex-1 text-center py-1.5 rounded-[4px] text-[10px] font-medium uppercase tracking-wide transition-colors
-                ${i === currentStep ? "bg-[#020617] text-white" : i < currentStep ? "bg-[#F1F3F5] text-[#4B5563] hover:bg-[#E2E8F0] cursor-pointer" : "text-[#7F7F7F] cursor-not-allowed"}`}
+                ${i === currentStep ? "border border-[#020617] text-[#020617] bg-white" : i < currentStep ? "border border-[#E2E8F0] bg-[#F7F9FC] text-[#4B5563] hover:bg-[#E2E8F0] cursor-pointer" : "text-[#7F7F7F] cursor-not-allowed"}`}
             >
               {step}
             </button>
